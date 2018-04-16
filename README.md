@@ -1,24 +1,57 @@
 # Desafio Técnico - Analista Java - Victor de Nápoles dos Santos
-======================================================================
 
-- Tecnologias utilizadas:
-	- Java 8
-	- Maven 3
-	- Spring boot
-	- Spring data
-	- Spring mvc
-	- PostgreSQL
+O desafio proposto foi criar um webservice que colete informações de livros da Saraiva e que forneça essas informações por
+meio de um serviço.
 
-- Ambiente para rodar a aplicação
-	- Java 8
-	- Spring Tools Suite
-	- Maven
-	- PostgreSQL
-	
-- Passos para executar a aplicação:
-	- Baixar e instalar o PostgreSQL. (Caso já tenha o PostgreSQL instalado, pule este passo)
-	- Baixar o codigo fonte do GitHub.
-	- Importar como projeto Maven no Spring Tools Suite.
-	- Alterar as configurações de conexão com banco de dados no arquivo application.properties. (Arquivo se encontra no diretório /src/main/resources)
-	- Executar o build no Maven.(Goals clean install)
-	- E executar a classe Application.
+## Sistema operacional
+
+Linux Ubuntu
+
+## Tecnologias utilizadas
+
+* Java 8
+* Maven 3
+* Spring boot
+* Spring data
+* Spring mvc
+* PostgreSQL
+
+## Passos para executar a aplicação
+
+### Passo 1
+
+Instale o PostgreSQL.
+
+```
+$ sudo apt-get update
+$ sudo apt-get install postgresql postgresql-contrib
+```
+
+### Passo 2
+
+Altere a senha do usuário default do PostgreSQL.
+
+```
+$ sudo -u postgres psql
+
+     postgres=> alter user postgres password 'postgres';
+     postgres=> \q
+	 
+```
+
+### Passo 3
+
+Clone o repositório do GitHub.
+
+```
+git clone https://github.com/VictorNapoles/teste-victor-napoles.git
+```
+
+### Passo 4
+
+Acesse o diretório da aplicação e execute o build no Maven.
+
+```
+cd teste-victor-napoles
+mvn clean install spring-boot:run
+```
