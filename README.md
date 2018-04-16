@@ -18,6 +18,8 @@ Linux Ubuntu
 
 ## Passos para executar a aplicação
 
+Obs.: Necessário ter o Java 8 e o Maven instalado.
+
 ### Passo 1
 
 Instale o PostgreSQL.
